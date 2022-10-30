@@ -58,7 +58,7 @@ function getArea() {
               <div class="areatext mn  text-center text-white  m-3"
               onclick="areaList('${areaArr[i].strArea}')"
               >
-                <img src="../area.png" class="w-75" alt="" srcset="" />
+                <img src="area.png" class="w-75" alt="" srcset="" />
                 <h2>${areaArr[i].strArea}</h2>
           </div>
               </div>
