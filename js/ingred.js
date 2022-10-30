@@ -64,7 +64,8 @@ function getingred() {
                 onclick='filtApi("${ingredArr[i].strIngredient}")'
 
               >
-                    <img src="../js/balanced-diet.png" class="w-100 rounded" alt="logo" srcset="" />
+                <div class='ingredimg'></div>
+
                 <h2 class='text-success'>${ingredArr[i].strIngredient}</h2>
                 <p class='ten-chars text-muted' >${ingredArr[i].strDescription}</p>
           </div>

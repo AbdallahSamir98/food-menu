@@ -23,6 +23,21 @@
   z-index: 555555555;
   left: -200px;
 }
+.areaimg {
+  background-image: url(../area.png);
+  background-size: 100% 100%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+}
+.ingredimg {
+  background-image: url(../balanced-diet.png);
+  background-size: 100% 100%;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
 @media only screen and (max-width: 600px) {
   .searchContent input {
     text-align: center;
