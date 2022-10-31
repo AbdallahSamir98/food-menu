@@ -20,7 +20,7 @@ function displaySearchApi() {
   let sear = "";
   for (let i = 0; i < searchArr.length; i++) {
     sear += `
-    <div class="col-md-3">
+    <div class="col-md-3 wow fadeIn " data-wow-duration="1s"data-wow-delay="0s"">
               <div
               onclick='getDes(${searchArr[i].idMeal})'
                 class="content w-100 m-3 overflow-hidden rounded position-relative"
@@ -59,7 +59,7 @@ function displayLetterApi() {
   let lear = "";
   for (let i = 0; i < arrLetter.length; i++) {
     lear += `
-    <div class="col-md-3 ">
+    <div class="col-md-3 wow fadeIn " data-wow-duration=".5s"data-wow-delay=".1s"">
               <div
               onclick='getDes(${arrLetter[i].idMeal})'
 
@@ -81,7 +81,6 @@ function displayLetterApi() {
 displayLetterApi();
 
 // ---------------------------------------
-
 $(".open").click(function () {
   if ($(".slide").css("left") == "0px") {
     $(".hiddenSlide").animate({ left: "0%" }, 1000, function () {
@@ -91,7 +90,7 @@ $(".open").click(function () {
     $(".slide").animate({ left: hiddenSlide }, 1000);
     document.querySelector(".open").innerHTML = `
           <i class="fa-solid fa-xmark fa-2x"></i>
-    
+
     `;
   } else {
     $(".hiddenSlide").animate({ left: -hiddenSlide }, 1000, function () {
@@ -128,7 +127,7 @@ function displayDes() {
     des += `
         
         <div class="col-md-4 text-white">
-              <div class="desImg text-center">
+              <div class="desImg text-center ">
                 <img src="${searchArr[i].strMealThumb}" class="w-100" alt="" />
                 <h2 class="mt-4">${searchArr[i].strMeal}</h2>
               </div>
@@ -192,13 +191,13 @@ function displayDes() {
   for (let i = 0; i < arrLetter.length; i++) {
     des += `
         
-        <div class="col-md-4 text-white">
-              <div class="desImg text-center">
+        <div class="col-md-4 text-white wow slideInLeft " data-wow-duration="2s"data-wow-delay="0s"">
+              <div class="desImg ">
                 <img src="${arrLetter[i].strMealThumb}" class="w-100" alt="" />
                 <h2 class="mt-4">${arrLetter[i].strMeal}</h2>
               </div>
             </div>
-            <div class="col-md-8 text-white">
+            <div class="col-md-8 text-start text-white wow slideInLeft " data-wow-duration="2s"data-wow-delay="0s"">
               <div class="desText">
                 <h3 class=''>Instrcation</h3>
                 <p>

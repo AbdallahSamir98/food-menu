@@ -54,8 +54,8 @@ function getArea() {
   for (let i = 0; i < areaArr.length; i++) {
     area += `
 
-        <div class="col-md-3 ">
-              <div class="areatext mn  text-center text-white  m-3"
+        <div class="col-md-3  ">
+              <div class="areatext mn  text-center text-white  m-3 "
               onclick="areaList('${areaArr[i].strArea}')"
               >
                 <div class='areaimg'></div>
@@ -87,7 +87,7 @@ function filterArea() {
   for (let i = 0; i < areaArr.length; i++) {
     area += `
 
-        <div class="col-md-3 ">
+        <div class="col-md-3 wow slideInLeft " data-wow-duration="1.5s"data-wow-delay="0s" ">
               <div class="areatext mn  text-center text-white   m-3"
               onclick="areaFilter('${areaArr[i].idMeal}')"
               
@@ -124,13 +124,13 @@ function displaya() {
   for (let i = 0; i < areaArr.length; i++) {
     des += `
 
-        <div class="col-md-4 text-white">
-              <div class="desImg text-center">
+        <div class="col-md-4 text-white wow slideInLeft " data-wow-duration="2s"data-wow-delay=".1s"">
+              <div class="desImg text-center ">
                 <img src="${areaArr[i].strMealThumb}" class="w-100" alt="" />
                 <h2 class="mt-4">${areaArr[i].strMeal}</h2>
               </div>
             </div>
-            <div class="col-md-8 text-white">
+            <div class="col-md-8 text-white wow slideInRight " data-wow-duration="2s"data-wow-delay=".1s" ">
               <div class="desText">
                 <h3 class=''>Instrcation</h3>
                 <p>

@@ -22,9 +22,10 @@ $(".open").click(function () {
     `;
   }
 });
+
 // loading page
 
-$(document).ready(function () {
+$(document).ready(() => {
   $(".loadingLayer").fadeOut(1000, function () {
     $("document,body").css("overflowY", "visible");
   });
@@ -54,13 +55,13 @@ function displayApi() {
               >
 
                 <div class="imagecontent ">
-                <a href="">
+                
                   <img src="${arr[i].strMealThumb}" class=" w-100" alt="" />
     
-</a>
+
                 </div>
                 <div class="textcontent d-flex align-items-center">
-                <h2><a href="">${arr[i].strMeal}</a></h2>
+                <h2>${arr[i].strMeal}</h2>
 
                 </div>
               </div>
@@ -86,13 +87,13 @@ function displayDes() {
   for (let i = 0; i < arr.length; i++) {
     des += `
         
-        <div class="col-md-4 text-white la">
+        <div class="col-md-4 text-white la wow slideInLeft " data-wow-duration="s"data-wow-delay="0s"">
               <div class="desImg text-center">
                 <img src="${arr[i].strMealThumb}" class="w-100" alt="" />
                 <h2 class="mt-4">${arr[i].strMeal}</h2>
               </div>
             </div>
-            <div class="col-md-8 text-white la">
+            <div class="col-md-8 text-white la wow slideInRight " data-wow-duration="s"data-wow-delay="0s"">
               <div class="desText">
                 <h3 class=''>Instrcation</h3>
                 <p>

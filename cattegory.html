@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food menu</title>
     <link rel="icon" href="chef-hat.png" />
+    <link rel="stylesheet" href="css/animate.css" />
 
     <link rel="stylesheet" href="css/all.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -51,12 +52,19 @@
       </div>
       <div class="container-fluid bg-black">
         <div class="container">
-          <div class="row catt py-5"></div>
+          <div
+            class="row catt py-5 wow slideInLeft"
+            data-wow-duration="3s"
+          ></div>
         </div>
       </div>
     </section>
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
     <script src="js/cattegory.js"></script>
     <!-- <script src="js/script.js"></script> -->
   </body>

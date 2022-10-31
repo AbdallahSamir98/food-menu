@@ -26,8 +26,9 @@
 .areaimg {
   background-image: url(../area.png);
   background-size: 100% 100%;
-  width: 100px;
-  height: 100px;
+
+  width: 150px;
+  height: 150px;
   margin: auto;
 }
 .ingredimg {
@@ -40,7 +41,7 @@
 
 @media only screen and (max-width: 600px) {
   .searchContent input {
-    text-align: center;
+    font-size: 14px;
   }
   .col-md-3,
   .col-md-4,
@@ -50,7 +51,7 @@
     margin: auto;
   }
   .desText {
-    text-align: center;
+    /* text-align: center; */
     padding-left: 20px;
   }
 }
@@ -82,7 +83,7 @@ a {
   font-weight: 600;
 }
 .hiddenSlide a:hover {
-  color: #dc3545;
+  color: #fcc403;
 }
 .logo {
   width: 40px;
@@ -135,4 +136,12 @@ a {
 }
 body {
   overflow-y: hidden;
+}
+
+.desText h3,
+.desImg h2 {
+  color: #fcc403;
+}
+.desText p {
+  color: rgba(255, 255, 255, 0.714);
 }

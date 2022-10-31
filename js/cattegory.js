@@ -14,7 +14,7 @@ function getCatt() {
   for (let i = 0; i < cattArr.length; i++) {
     catt += `
 
-        <div class="col-md-3">
+        <div class="col-md-3 ">
               <div
               onclick ="filterApi('${cattArr[i].strCategory}')"
                 class="content w-100 m-3 overflow-hidden rounded position-relative"
@@ -84,7 +84,7 @@ function getFilter() {
   for (let i = 0; i < cattArr.length; i++) {
     catt += `
 
-        <div class="col-md-3">
+        <div class="col-md-3 ">
               <div
                 class="content w-100 m-3 overflow-hidden rounded position-relative"
               onclick='cat("${cattArr[i].idMeal}")'
@@ -131,13 +131,15 @@ function displayc() {
   for (let i = 0; i < cattArr.length; i++) {
     des += `
 
-        <div class="col-md-4 text-white text-center">
+        <div class="col-md-4 text-white text-center wow slideInLeft" data-wow-duration="1.5s"">
               <div class="desImg text-center">
                 <img src="${cattArr[i].strMealThumb}" class="w-100" alt="" />
                 <h2 class="mt-4">${cattArr[i].strMeal}</h2>
               </div>
             </div>
-            <div class="col-md-8 text-white">
+            <div class="col-md-8 text-white wow slideInRight
+
+" data-wow-duration="1.5s"">
               <div class="desText">
                 <h3 class=''>Instrcation</h3>
                 <p>

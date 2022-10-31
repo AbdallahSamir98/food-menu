@@ -99,7 +99,7 @@ function getFilter() {
   for (let i = 0; i < ingredArr.length; i++) {
     ingred += `
 
-        <div class="col-md-3 ">
+        <div class="col-md-3 wow slideInLeft " data-wow-duration="3s"data-wow-delay=".5s"">
               <div class="areatext mn rounded  text-center  text-white  m-3"
               onclick='ingFilter("${ingredArr[i].idMeal}")'
               >
@@ -135,13 +135,13 @@ function displayIng() {
   for (let i = 0; i < ingredArr.length; i++) {
     des += `
 
-        <div class="col-md-4 text-white ">
+        <div class="col-md-4 text-white wow slideInLeft" data-wow-duration="1.5s"">
               <div class="desImg text-center">
                 <img src="${ingredArr[i].strMealThumb}" class="w-100" alt="" />
                 <h2 class="mt-4">${ingredArr[i].strMeal}</h2>
               </div>
             </div>
-            <div class="col-md-8 text-white ">
+            <div class="col-md-8 text-white wow slideInRight" data-wow-duration="1.5s"">
               <div class="desText">
                 <h3 class=''>Instrcation</h3>
                 <p>

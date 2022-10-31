@@ -141,7 +141,7 @@ $(".open").click(function () {
     $(".slide").animate({ left: hiddenSlide }, 1000);
     document.querySelector(".open").innerHTML = `
           <i class="fa-solid fa-xmark fa-2x"></i>
-    
+
     `;
   } else {
     $(".hiddenSlide").animate({ left: -hiddenSlide }, 1000, function () {

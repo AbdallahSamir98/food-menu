@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food menu</title>
     <link rel="icon" href="chef-hat.png" />
+    <link rel="stylesheet" href="css/animate.css" />
 
     <link rel="stylesheet" href="css/all.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -45,7 +46,7 @@
         <p class="text-muted p-3">Copyright Â© 2019 All Rights Reserved.</p>
       </div>
     </div>
-    <section>
+    <section class="bg-black">
       <div class="loadingLayer">
         <i class="fa-solid fa-spinner fa-spin fa-4x"></i>
       </div>
@@ -53,7 +54,7 @@
         <div class="container">
           <h2 class="text-white text-center mt-5">Contact Us</h2>
 
-          <div class="row contact py-5">
+          <div class="row contact py-5 h-100">
             <div class="col-md-6 m-auto">
               <div class="inputs">
                 <input
@@ -143,7 +144,10 @@
     </section>
     <script src="js/jquery-3.6.1.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
     <script src="js/contact.js"></script>
-    <!-- <script src="js/script.js"></script> -->
   </body>
 </html>
